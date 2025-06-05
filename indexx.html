@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JuteStore - Eco-friendly Jute Bags</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: lightgreen;
+      color: #333;
+    }
+
+    header {
+      background-color: #28a745;
+      padding: 30px 10px;
+      color: white;
+      text-align: center;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    nav {
+      background-color: #80af33;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 50px;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #28a745;
+      color: #fff;
+    }
+
+    .hero {
+      background: url('https://media.istockphoto.com/id/1903697706/photo/close-up-of-a-fabric-cloth-texture-for-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=U-UfNAjROC8LthGTfVGUQmwablMwkRxCO-9x1TxV86s=') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero h1 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      font-size: 50px;
+      border-radius: 40px;
+    }
+
+    .product-section {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: light rgb(25, 70, 40);
+    }
+
+    .product-section h2 {
+      font-size: 36px;
+      color: #28a745;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 15px green;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .product-card h3 {
+      padding: 15px 10px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .product-card p {
+      padding: 0 10px 15px;
+      font-size: 20px;
+      color: #28a745;
+      font-weight: bold;
+    }
+
+    .product-card .btn-buy {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 10px 10px 20px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .product-card .btn-buy:hover {
+      background-color: #218838;
+    }
+
+    footer {
+      background-color:  #28a745;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JuteStore</h1>
+    <p>Eco-Friendly Jute Bags for a Greener Tomorrow</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Carry the Earth with You</h1>
+  </div>
+
+  <div class="product-section">
+    <h2>Our Exclusive Collection</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/1271947622/photo/handmade-bag-jute-bags.webp?a=1&b=1&s=612x612&w=0&k=20&c=TfD-hRvV79LaRp9Q9Ii7YAqZw7QhR80LOlGTbBNMKuY=">
+        <h3>Classic Jute Tote</h3>
+        <p>₹299</p>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/1164478700/photo/indian-made-sack-bag-or-shopping-bag.webp?a=1&b=1&s=612x612&w=0&k=20&c=u66j4-f0Zlg6lZesWWs_SZqmp0d66X00qi4h2OPz1x0=">
+        <h3>Eco Jute Shopping Bag</h3>
+        <p>₹349</p>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/2149285947/photo/fashionable-jute-bag-standing-on-the-chair-in-natural-light.webp?a=1&b=1&s=612x612&w=0&k=20&c=3AaryfMYc-phax794w_XIz5LXffJzx1wvy9uGD7MfmI=">
+        <h3>Stylish Jute Handbag</h3>
+        <p>₹449</p>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/1276741518/photo/straw-bag-and-sunglasses-with-sea-beach-at-sunset-light-as-a-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=Wnr0Odwq9Mo1uHwxIFv-0eNgrr5veKv-JXyv2S8Ku6A=">
+        <h3>Jute Beach Bag</h3>
+        <p>₹599</p>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1533121148758-0e29f0049e49?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fEp1dGUlMjBsYXB0b3AlMjBiYWdzfGVufDB8fDB8fHww">
+        <h3>Jute Laptop Bag</h3>
+        <p>₹499</p>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/897950854/photo/empty-basket-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=RioftwMhlJzN3fN8NqEx5sNcrm-E4uu-3AQe1Vi8ERo=">
+        <h3>Jute Lunch Bag</h3>
+        <p>₹249</p>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1731912851142-74348cc7d687?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <h3>Jute Mats</h3>
+        <p>₹200</p>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/898656610/photo/jute-and-wooden-furnitures-handicraft-products.webp?a=1&b=1&s=612x612&w=0&k=20&c=iAKG6auO7i2ZBmDCiUAVfnX9P1P935evjCi7dhW-27E=">
+        <h3>Jute Furnitures</h3>
+        <p>₹499</p>
+        <a href="#" class="btn-buy">Buy Now</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; padding: 40px; background-color:  #28a745; color: white;">
+  
+      <div style="flex: 1; min-width: 220px; margin: 10px;">
+        <h3>JuteStore</h3>
+        <p>Eco-friendly products made from natural jute. Join us in creating a sustainable future!</p>
+      </div>
+  
+      <div style="flex: 1; min-width: 220px; margin: 10px;">
+        <h3>Quick Links</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Home</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Shop</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">About</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div style="flex: 1; min-width: 220px; margin: 10px;">
+        <h3>Customer Service</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #ccc; text-decoration: none;">FAQ</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Shipping & Returns</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Privacy Policy</a></li>
+          <li><a href="#" style="color: #ccc; text-decoration: none;">Terms & Conditions</a></li>
+        </ul>
+      </div>
+  
+      <div style="flex: 1; min-width: 220px; margin: 10px;">
+        <h3>Contact Us</h3>
+        <p>Email: support@jutestore.com</p>
+        <p>Phone: +91-9876543210</p>
+        <p>Follow us:</p>
+        <p style="font-size: 20px;">
+          🔵 🟣 🔴 🟢
+        </p>
+      </div>
+  
+    </div>
+  
+    <div style="background-color: #575353; text-align: center; padding: 15px; color: #aaa;">
+      <p>&copy; 2025 JuteStore. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
